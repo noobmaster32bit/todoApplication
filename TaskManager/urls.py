@@ -25,5 +25,7 @@ urlpatterns = [
     path('tasks/<int:pk>/',views.TaskDetailView.as_view(),name="task-detail"),
     path('tasks/<int:pk>/remove/',views.TaskDeleteView.as_view(),name="task-delete"),
     path('tasks/<int:pk>/change/',views.TaskUpdateView.as_view(),name="task-edit"),
-
+    path('signup/',views.SignUpView.as_view(),name="signup"),
+    path('',views.SignInView.as_view(),name="signin"),
+    path('singout',views.SignOutView.as_view(),name="signout")
 ]
